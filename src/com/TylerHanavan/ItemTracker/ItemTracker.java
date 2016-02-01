@@ -9,6 +9,8 @@ public class ItemTracker extends JavaPlugin {
 		
 		this.getServer().getPluginManager().registerEvents(new InventoryListener(this), this);
 		
+		this.getCommand("it").setExecutor(new ItemTrackerCommand());
+		
 	}
 	
 	@Override
